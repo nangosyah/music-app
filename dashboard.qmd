@@ -111,8 +111,6 @@ gt_table <- Pschoolvo1 |>
     title = md("**Private School Vol. 1 Playlist**"),
     subtitle = md("*A curated collection of tracks from Spotify*")
   )
-
-gt_table
 ```
 
 ```{r, sendtoojs}
@@ -121,11 +119,11 @@ gt_table
 ojs_define(rap_ojs = Pschoolvo1)
 ```
 
-# ================= NEW LAYOUT (MATCHES THE PICTURE) =================
+## Row
 
-## Column {width="30%"}  <!-- SMALL LEFT COLUMN -->
+### Column {width="30%"}
 
-### 🎧 Spotify Player
+#### 🎧 Spotify Player
 
 ```{ojs}
 //| expandable: false
@@ -136,7 +134,7 @@ viewof songDropdown = Inputs.select(
   rap_hits.map(d=> d.song_name),
   {
   label: html`<span style="font-size: 14px; color: #1E88E5; font-weight: bold;">
-    Pick a track
+    Pick a track:
   </span>`,
   unique: true
   }
@@ -163,15 +161,15 @@ html`
 `
 ```
 
----
+### Column {width="70%"} 
 
-## Column {width="70%"}  <!-- BIG RIGHT COLUMN -->
-
-### 📊 Playlist Table
+#### 📊 Playlist Table
 
 ```{r}
 gt_table
 ```
+
+## Row {height="10%"}
 
 ### About this dashboard
 
@@ -184,6 +182,6 @@ gt_table
   text-align: center;
   font-size: 0.9rem;
 ">
-Dashboard was inspired by **Melissa Van Bussel’s** Posit 2024 Table Contest tutorial.
+Dashboard was inspired by **Melissa Van Bussel's** Posit 2024 Table Contest tutorial.
 </div>
 :::
