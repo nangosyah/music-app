@@ -37,7 +37,7 @@ spotify_access_token <- response$access_token
 ```
 
 ```{r getPRIVATESCHOOLVOL1playlist}
-playlist3 <- request("https://api.spotify.com/v1/playlists/37i9dQZEVXbjdjahJqBqJz") |> 
+playlist3 <- request("https://api.spotify.com/v1/playlists/1zg2vh7uktbMz8zXmYPmbQ") |> 
   req_method("GET") |> 
   req_headers(
     Authorization = paste0("Bearer ", spotify_access_token)) |> 
