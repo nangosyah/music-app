@@ -107,8 +107,15 @@ gt_table <- Pschoolvo1 |>
     } 
   ) |>
   tab_header(
-    title = md("**My Jams -  A Playlist**"),
-    subtitle = md("*A curated collection of tracks from Spotify*")
+    title = md("**That's My Song**"),
+    subtitle = md("*A curated collection of tracks I love*")
+  ) |>
+  tab_footnote(
+    footnote = "The popularity of a track is a value between 0 and 100, where 100 represents the most popular and 0 represents the least popular. This metric reflects how frequently a track has been played in recent times.",
+    locations = cells_column_labels(columns = popularity)
+  ) |> 
+  tab_source_note(
+    source_note = md("**Source:** [Spotify Playlist](https://api.spotify.com/v1/playlists/1zg2vh7uktbMz8zXmYPmbQ)")
   )
 ```
 
