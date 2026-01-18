@@ -1,0 +1,15 @@
+{
+  "packages": {
+    "r": {
+      "requires": [
+        "rmarkdown",
+        "knitr",
+        "yaml",
+        "tidyverse",
+        "gt",
+        "httr2",
+        "jsonlite"
+      ]
+    }
+  }
+}
