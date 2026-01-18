@@ -1,0 +1,61 @@
+/*-- scss:defaults --*/
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
+// Set fonts
+$font-family-sans-serif: 'Roboto Mono', monospace;
+$headings-font-family: 'Roboto Mono', monospace;
+
+/*-- scss:rules --*/
+
+// Dashboard title and author
+.navbar-title {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.navbar-author {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+}
+
+// Card titles (section headers)
+.card-header {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+// Body text
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+}
+
+// Table styling
+.gt_table {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.gt_heading {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+}
+
+.gt_column_spanner_outer,
+.gt_col_heading {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+}
+
+// Dropdown and inputs
+select, input {
+  font-family: 'Roboto Mono', monospace;
+}
+
+// About section
+.card p {
+  font-family: 'Roboto Mono', monospace;
+}

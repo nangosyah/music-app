@@ -37,7 +37,7 @@ spotify_access_token <- response$access_token
 ```
 
 ```{r getPRIVATESCHOOLVOL1playlist}
-playlist3 <- request("https://api.spotify.com/v1/playlists/5zkGkYCwKGHnRfkpPRRo3J") |> 
+playlist3 <- request("https://api.spotify.com/v1/playlists/37i9dQZEVXbjdjahJqBqJz") |> 
   req_method("GET") |> 
   req_headers(
     Authorization = paste0("Bearer ", spotify_access_token)) |> 
@@ -107,7 +107,7 @@ gt_table <- Pschoolvo1 |>
     } 
   ) |>
   tab_header(
-    title = md("**Private School Vol. 1 Playlist**"),
+    title = md("**My Jams -  A Playlist**"),
     subtitle = md("*A curated collection of tracks from Spotify*")
   )
 ```
@@ -181,6 +181,6 @@ gt_table
   text-align: center;
   font-size: 0.9rem;
 ">
-Dashboard was inspired by **Melissa Van Bussel's** Posit 2024 Table Contest tutorial.
+Dashboard was inspired and based on **Melissa Van Bussel's** Posit 2024 Table Contest tutorial.
 </div>
 :::
